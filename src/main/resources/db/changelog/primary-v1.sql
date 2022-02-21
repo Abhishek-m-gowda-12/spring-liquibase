@@ -1,0 +1,1 @@
+ALTER TABLE test_liquibase ADD "primary" varchar(50);
