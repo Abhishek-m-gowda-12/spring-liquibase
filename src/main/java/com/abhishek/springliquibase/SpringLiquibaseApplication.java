@@ -16,7 +16,7 @@ public class SpringLiquibaseApplication {
     }
 
     @Bean
-    public SpringLiquibase secondaryDatabase(@Qualifier("postgresDataSource") DataSource dataSource) {
+    public SpringLiquibase secondaryDatabase(@Qualifier("secondaryDataSource") DataSource dataSource) {
         SpringLiquibase liquibase = new SpringLiquibase();
 
         liquibase.setTag("secondary");

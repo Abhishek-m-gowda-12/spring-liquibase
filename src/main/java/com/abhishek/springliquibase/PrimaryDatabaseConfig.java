@@ -22,7 +22,7 @@ import javax.sql.DataSource;
         entityManagerFactoryRef = "applicationEntityManagerFactory",
         transactionManagerRef = "applicationTransactionManager",
         basePackages = {"com.abhishek.springliquibase"})
-public class ApplicationDatabaseConfig {
+public class PrimaryDatabaseConfig {
     @Primary
     @Bean(name = "applicationDataSource")
     @ConfigurationProperties(prefix = "spring.datasource")
