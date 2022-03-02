@@ -8,10 +8,10 @@ import org.springframework.context.annotation.Configuration;
 import javax.sql.DataSource;
 
 @Configuration
-public class PostgresDatabaseConfig {
+public class SecondaryDatabaseConfig {
 
-    @Bean(name = "postgresDataSource")
-    @ConfigurationProperties(prefix = "derby.spring.datasource")
+    @Bean(name = "secondaryDataSource")
+    @ConfigurationProperties(prefix = "secondary.spring.datasource")
     public DataSource dataSource() {
         return DataSourceBuilder.create().build();
     }
